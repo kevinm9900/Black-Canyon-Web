@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="fontawesome-free-5.15.3-web/css/all.min.css">
+</head>
+<body>
+
+  <div class="header">
+    <div class="logo appear1">
+    <b href="#default" class="logo"><img src = "images/BCC_Logo_light-wDrop.png" alt=""</b>
+    <div class="header-right">
+      <a href="About.html"><br>About</a>
+      <a href="LeadershipTeam.html"><br>Leadership Team</a>
+      <a href="gallery.html"><br>Gallery</a>
+      <a href="subcontractors.html"><br>Subcontractors</a>
+      <a href="careers.html"><br>Careers</a>
+      <div class="dropdown">
+        <button class="dropbtn">Lets Talk!
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="sales.html">Sales</a>
+          <a href="Estimating.html">Estimating</a>
+          <a href="ProjectManagement.html">Project Management</a>
+        </div>
+      </div>
+
+      <a class= "active" href="contact.html"><br>Contact</a>
+      <a href="Introduction.html"><br>Introduction</a>
+      <a href="index.html"><br>Home</a>
+    </div>
+  </div>
+</div>
+
+
+<!--Job Form-->
+
+<div id="survey-container">
+  <div class="survey-container appear">
+  <h1 id="title">Contact us!</h1>
+
+  <p id="description">Send us a Message</p>
+
+  <form id="survey-form">
+
+    <!-- name -->
+    <label id="name-label" class="row-label" for="name">Name:</label>
+    <input id="name" class="row-input" type="text" placeholder="Enter your name" required>
+
+    <!-- email -->
+    <label id="email-label" class="row-label" for="email">Email:</label>
+    <input id="email" class="row-input" type="email" placeholder="Enter your email" required>
+
+    <!-- subject -->
+    <label id="subject-label" class="row-label" for="subject">Subject:</label>
+    <input id="subject" class="row-input" type="subject" placeholder="Enter subject" required>
+
+    <!-- comments textarea -->
+    <label class="row-label" for="comments">Enter Message:</label>
+    <textarea id="comments" placeholder="Enter Message Here..."></textarea>
+
+    <!-- submit button -->
+    <button id="submit" type="submit">Submit</button>
+
+  </form>
+
+</div>
+</div>
+<script src="script.js"></script>
+
+
+</body>
+</html>
