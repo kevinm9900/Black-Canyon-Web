@@ -33,6 +33,7 @@ html{
   color:  #28282B;
   text-align: center;
   padding: 12px;
+  font-weight:bold;
   text-decoration: none;
   font-size: 18px;
   font-family: "Helvetica"fantasy;
@@ -57,13 +58,15 @@ html{
   background-color:  #28282B;
   color: #F5F5F5;
 }
-
 /* Float the link section to the right */
 .header-right {
   float: right;
 }
 
-
+.logo {
+  display: inline-block;
+  vertical-align: middle;
+}
   .header-right {
     float: none;
   }
@@ -144,7 +147,7 @@ header {
 
 .dropbtn {
   background-color: #F5F5F5;
-  font-weight: bold;
+  font-weight:bold;
   font-family: "Helvetica"fantasy;
   color: #28282B;
   text-align: center;
@@ -533,6 +536,23 @@ width: 50%;
 }
 
 .appear6.inview6 {
+  opacity: 1;
+  -webkit-transform: none;
+          transform: none;
+  -webkit-transition-delay: 0.3s;
+          transition-delay: 0.3s;
+}
+
+/* animation 7 */
+.appear7 {
+  -webkit-transition: all 0.8s;
+  transition: all 0.8s;
+  opacity: 0;
+  -webkit-transform: translateY(40px);
+          transform: translateY(40px);
+}
+
+.appear7.inview7 {
   opacity: 1;
   -webkit-transform: none;
           transform: none;

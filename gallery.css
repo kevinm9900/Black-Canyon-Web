@@ -53,6 +53,11 @@ html{
   color: black;
 }
 
+.logo {
+  display: inline-block;
+  vertical-align: middle;
+}
+
 /* Style the active/current link*/
 .header a.active {
   background-color: #28282B;
@@ -145,7 +150,7 @@ header {
 
 .dropbtn {
   background-color: #E8E8E8;
-  font-weight: bold;
+  font-weight: normal;
   font-family: "Helvetica"fantasy;
   color: #28282B;
   text-align: center;

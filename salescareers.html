@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="careers.css">
+    <link rel="stylesheet" href="fontawesome-free-5.15.3-web/css/all.min.css">
+</head>
+<body>
+
+  <div class="header">
+    <div class="logo appear1">
+      <a href="index.html"><img src="images/BCC_Logo_light-wDrop.png" alt="Black Canyon Construction Logo"></a>
+    </div>
+    <div class="header-right appear2">
+      <div class="dropdown">
+        <button class="dropbtn">Contact us
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="general.html">General</a>
+          <a href="Estimating.html">Estimating</a>
+          <a href="ProjectManagement.html">Project Management</a>
+          <a href="sales.html">Sales</a>
+        </div>
+      </div>
+<!--      <a href="contact.html"><br>Contact</a> -->
+      <a href="LeadershipTeam.html"><br>Leadership Team</a>
+      <div class="dropdown">
+        <button class="dropbtn">Careers
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="generalcareers.html">General</a>
+          <a href="Estimatingcareers.html">Estimating</a>
+          <a href="ProjectManagementcareers.html">Project Management</a>
+          <a href="salescareers.html">Superintendent</a>
+        </div>
+      </div>
+      <a href="subcontractors.html"><br>Subcontractors</a>
+      <a href="portfolio.html"><br>Portfolio</a>
+      <a href="About.html"><br>About</a>
+      <a href="Introduction.html"><br>Introduction</a>
+    </div>
+  </div>
+</div>
+
+<!--Job Form-->
+
+<div id="survey-container">
+  <div class="survey-container appear">
+  <h1 id="title">Join our team!</h1>
+
+  <p id="description">Enquire about superintendent positions</p>
+
+<form id="survey-form" action="https://script.google.com/macros/s/AKfycbztxmbsMskbMVWA4Plqah6OUyXSXA6gBzpzCKyFrKTJvNryFLcZJ7m19YP3R8zXRTbV1A/exec" method="POST" enctype="multipart/form-data">
+
+  <!-- name -->
+  <label id="name-label" class="row-label" for="name">Name:</label>
+  <input id="name" name="name" class="row-input" type="text" placeholder="Enter your name" required>
+
+  <!-- phone -->
+  <label id="phone-label" class="row-label" for="phone">Phone Number:</label>
+  <input id="phone" name="phone" class="row-input" type="phone" placeholder="Enter your phone number" required>
+
+  <!-- email -->
+  <label id="email-label" class="row-label" for="email">Email:</label>
+  <input id="email" name="email" class="row-input" type="email" placeholder="Enter your email" required>
+
+  <!-- address -->
+  <label id="address-label" class="row-label" for="address">Address:</label>
+  <input id="saddress" name="saddress" class="row-input" type="saddress" placeholder="Street Address" required>
+  <br> <input id="saddress2" name="saddress2" class="row-input" type="saddress2" placeholder="Street Address 2">
+  <br> <input id="city" name="city" class="row-input" type="city" placeholder="City" required>
+  <br> <input id="state" name="state" class="row-input" type="state" placeholder="State/Province" required>
+  <br> <input id="postal" name="postal" class="row-input" type="postal" placeholder="Postal/Zip Code" required>
+
+  <!-- comments textarea -->
+  <label class="row-label" for="comments">Additional information:</label>
+  <textarea id="comments" name="comments" placeholder="Enter additional information/comments here..."></textarea>
+
+<!-- submit resume -->
+<!--    <label class="row-label" for="comments">Submit Resume:</label>
+  <input type="file" id="myFile" name="myFile"> -->
+
+  <!-- submit button -->
+  <button id="submit" type="submit">Submit</button>
+
+</form>
+
+</div>
+<script src="script.js"></script>
+
+
+</body>
+</html>

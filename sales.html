@@ -11,26 +11,36 @@
 
   <div class="header">
     <div class="logo appear1">
-    <b href="#default" class="logo"><img src = "images/BCC_Logo_light-wDrop.png" alt=""</b>
-    <div class="header-right">
-      <a href="About.html"><br>About</a>
-      <a href="LeadershipTeam.html"><br>Leadership Team</a>
-      <a href="gallery.html"><br>Gallery</a>
-      <a href="subcontractors.html"><br>Subcontractors</a>
-      <a href="careers.html"><br>Careers</a>
-      <div class="dropdown">
-        <button class="dropbtn">Lets Talk!
+      <a href="index.html"><img src="images/BCC_Logo_light-wDrop.png" alt="Black Canyon Construction Logo"></a>
+    </div>
+    <div class="header-right appear2">      <div class="dropdown">
+        <button class="dropbtn">Contact us
           <i class="fa fa-caret-down"></i>
         </button>
         <div class="dropdown-content">
-          <a href="sales.html">Sales</a>
+          <a href="general.html">General</a>
           <a href="Estimating.html">Estimating</a>
           <a href="ProjectManagement.html">Project Management</a>
+          <a href="sales.html">Sales</a>
         </div>
       </div>
-      <a href="contact.html"><br>Contact</a>
+<!--      <a href="contact.html"><br>Contact</a> -->
+      <a href="LeadershipTeam.html"><br>Leadership Team</a>
+      <div class="dropdown">
+        <button class="dropbtn">Careers
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="generalcareers.html">General</a>
+          <a href="Estimatingcareers.html">Estimating</a>
+          <a href="ProjectManagementcareers.html">Project Management</a>
+          <a href="salescareers.html">Superintendent</a>
+        </div>
+      </div>
+      <a href="subcontractors.html"><br>Subcontractors</a>
+      <a href="portfolio.html"><br>Portfolio</a>
+      <a href="About.html"><br>About</a>
       <a href="Introduction.html"><br>Introduction</a>
-      <a href="index.html"><br>Home</a>
     </div>
   </div>
 </div>
@@ -43,23 +53,23 @@
 
   <p id="description">Send us a Message</p>
 
-  <form id="survey-form">
+  <form id="survey-form" action="https://script.google.com/macros/s/AKfycbw-88lhREN8t0ZbVvhybFWGolX7fbpUpQyvmZ96J27nIkvjZOjM5LAjLMT2vIqlRlWJNg/exec" method="POST" enctype="application/x-www-form-urlencoded">
 
     <!-- name -->
     <label id="name-label" class="row-label" for="name">Name:</label>
-    <input id="name" class="row-input" type="text" placeholder="Enter your name" required>
+    <input id="name" name="name" class="row-input" type="text" placeholder="Enter your name" required>
 
     <!-- phone -->
     <label id="phone-label" class="row-label" for="phone">Phone Number:</label>
-    <input id="phone" class="row-input" type="phone" placeholder="Enter your phone number" required>
+    <input id="phone" name="phone" class="row-input" type="phone" placeholder="Enter your phone number" required>
 
     <!-- email -->
     <label id="email-label" class="row-label" for="email">Email:</label>
-    <input id="email" class="row-input" type="email" placeholder="Enter your email" required>
+    <input id="email" name="email" class="row-input" type="email" placeholder="Enter your email" required>
 
     <!-- comments textarea -->
     <label class="row-label" for="comments">Message</label>
-    <textarea id="comments" placeholder="Enter Message here"></textarea>
+    <textarea id="comments" name="comments" placeholder="Enter Message here"></textarea>
 
     <!-- submit button -->
     <button id="submit" type="submit">Submit</button>

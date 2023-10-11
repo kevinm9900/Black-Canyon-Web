@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Car Washes</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<link href='https://fonts.googleapis.com/css?family=Roboto+Mono:400,300' rel='stylesheet' type='text/css'><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<link rel="stylesheet" href="./gallerystyle.css">
+
+</head>
+<body>
+  <header>
+    <br> <a href="../portfolio.html"> <button class="btn profile-edit-btn">GO BACK</button> </a>
+      </header>
+      <br>
+      <h1> Car Washes <h1>
+<!-- partial:index.partial.html -->
+<div class="m-p-g">
+	<div class="m-p-g__thumbs" data-google-image-layout data-max-height="350">
+    <img src="../carwashimg/VXEA3858.JPG" data-full="../carwashimg/VXEA3858.JPG" class="m-p-g__thumbs-img"/>
+    <img src="../carwashimg/QWGL4634.JPG" data-full="../carwashimg/QWGL4634.JPG" class="m-p-g__thumbs-img"/>
+    <img src="../carwashimg/IMG_3279.PNG" data-full="../carwashimg/IMG_3279.PNG" class="m-p-g__thumbs-img"/>
+    <img src="../carwashimg/FHRI9264.JPG" data-full="../carwashimg/FHRI9264.JPG" class="m-p-g__thumbs-img"/>
+    <img src="../carwashimg/DNXQ8250.JPG" data-full="../carwashimg/DNXQ8250.JPG" class="m-p-g__thumbs-img"/>
+    <img src="../carwashimg/WZVY9282.JPG" data-full="../carwashimg/WZVY9282.JPG" class="m-p-g__thumbs-img"/>
+    <img src="../carwashimg/OMQD5720.JPG" data-full="../carwashimg/OMQD5720.JPG" class="m-p-g__thumbs-img"/>
+    <img src="../carwashimg/NPLC7089.JPG" data-full="../carwashimg/NPLC7089.JPG" class="m-p-g__thumbs-img"/>
+    <img src="../carwashimg/JWUF8052.JPG" data-full="../carwashimg/JWUF8052.JPG" class="m-p-g__thumbs-img"/>
+    <img src="../carwashimg/HLBB9365.JPG" data-full="../carwashimg/HLBB9365.JPG" class="m-p-g__thumbs-img"/>
+    <img src="../carwashimg/FNNN8162.JPG" data-full="../carwashimg/FNNN8162.JPG" class="m-p-g__thumbs-img"/>
+    <img src="../carwashimg/ERTA4267.JPG" data-full="../carwashimg/ERTA4267.JPG" class="m-p-g__thumbs-img"/>
+    <img src="../carwashimg/GCWG7995.JPG" data-full="../carwashimg/GCWG7995.JPG" class="m-p-g__thumbs-img"/>
+    <img src="../carwashimg/MUBT5634.JPG" data-full="../carwashimg/MUBT5634.JPG" class="m-p-g__thumbs-img"/>
+    <img src="../carwashimg/UUQA6207.JPG" data-full="../carwashimg/UUQA6207.JPG" class="m-p-g__thumbs-img"/>
+    <img src="../carwashimg/QGPM7121.JPG" data-full="../carwashimg/QGPM7121.JPG" class="m-p-g__thumbs-img"/>
+    <img src="../carwashimg/JOZL4005.JPG" data-full="../carwashimg/JOZL4005.JPG" class="m-p-g__thumbs-img"/>
+    <img src="../carwashimg/PMIK5283.JPG" data-full="../carwashimg/PMIK5283.JPG" class="m-p-g__thumbs-img"/>
+    <img src="../carwashimg/QCZL3346.JPG" data-full="../carwashimg/QCZL3346.JPG" class="m-p-g__thumbs-img"/>
+    <img src="../carwashimg/MBCJ7699.JPG" data-full="../carwashimg/MBCJ7699.JPG" class="m-p-g__thumbs-img"/>
+
+
+
+
+  </div>
+
+	<div class="m-p-g__fullscreen"></div>
+</div>
+<button id="goBackBtn" class="scroll-btn">Go Up ^</button>
+<script>
+	var elem = document.querySelector('.m-p-g');
+
+	document.addEventListener('DOMContentLoaded', function() {
+		var gallery = new MaterialPhotoGallery(elem);
+	});
+
+  var goBackBtn = document.getElementById('goBackBtn');
+  goBackBtn.addEventListener('click', function() {
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+
+</script>
+<!-- partial -->
+  <script src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/45226/material-photo-gallery.min.js'></script>
+</body>
+</html>

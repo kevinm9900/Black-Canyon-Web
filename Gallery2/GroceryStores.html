@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Grocery Stores</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<link href='https://fonts.googleapis.com/css?family=Roboto+Mono:400,300' rel='stylesheet' type='text/css'><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<link rel="stylesheet" href="./gallerystyle.css">
+
+</head>
+<body>
+  <header>
+    <br> <a href="../portfolio.html"> <button class="btn profile-edit-btn">GO BACK</button> </a>
+      </header>
+      <br>
+      <h1> Grocery Stores <h1>
+<!-- partial:index.partial.html -->
+<div class="m-p-g">
+	<div class="m-p-g__thumbs" data-google-image-layout data-max-height="350">
+    <img src="../groceryimg/IMG_3318.JPG" data-full="../groceryimg/IMG_3318.JPG" class="m-p-g__thumbs-img"/>
+    <img src="../groceryimg/IMG_3319.JPG" data-full="../groceryimg/IMG_3319.JPG" class="m-p-g__thumbs-img"/>
+    <img src="../groceryimg/IMG_3320.JPG" data-full="../groceryimg/IMG_3320.JPG" class="m-p-g__thumbs-img"/>
+    <img src="../groceryimg/IMG_3321.JPG" data-full="../groceryimg/IMG_3321.JPG" class="m-p-g__thumbs-img"/>
+    <img src="../groceryimg/IMG_3322.JPG" data-full="../groceryimg/IMG_3322.JPG" class="m-p-g__thumbs-img"/>
+    <img src="../groceryimg/IMG_3323.JPG" data-full="../groceryimg/IMG_3323.JPG" class="m-p-g__thumbs-img"/>
+    <img src="../groceryimg/IMG_3324.JPG" data-full="../groceryimg/IMG_3324.JPG" class="m-p-g__thumbs-img"/>
+    <img src="../groceryimg/IMG_3325.JPG" data-full="../groceryimg/IMG_3325.JPG" class="m-p-g__thumbs-img"/>
+    <img src="../groceryimg/IMG_3326.JPG" data-full="../groceryimg/IMG_3326.JPG" class="m-p-g__thumbs-img"/>
+    <img src="../groceryimg/IMG_E3318.JPG" data-full="../groceryimg/IMG_E3318.JPG" class="m-p-g__thumbs-img"/>
+    <img src="../groceryimg/IMG_E3319.JPG" data-full="../groceryimg/IMG_E3319.JPG" class="m-p-g__thumbs-img"/>
+    <img src="../groceryimg/IMG_E3320.JPG" data-full="../groceryimg/IMG_E3320.JPG" class="m-p-g__thumbs-img"/>
+    <img src="../groceryimg/IMG_E3321.JPG" data-full="../groceryimg/IMG_E3321.JPG" class="m-p-g__thumbs-img"/>
+    <img src="../groceryimg/IMG_E3322.JPG" data-full="../groceryimg/IMG_E3322.JPG" class="m-p-g__thumbs-img"/>
+    <img src="../groceryimg/IMG_E3323.JPG" data-full="../groceryimg/IMG_E3323.JPG" class="m-p-g__thumbs-img"/>
+    <img src="../groceryimg/IMG_E3324.JPG" data-full="../groceryimg/IMG_E3324.JPG" class="m-p-g__thumbs-img"/>
+    <img src="../groceryimg/IMG_E3325.JPG" data-full="../groceryimg/IMG_E3325.JPG" class="m-p-g__thumbs-img"/>
+    <img src="../groceryimg/IMG_E3326.JPG" data-full="../groceryimg/IMG_E3326.JPG" class="m-p-g__thumbs-img"/>
+    <img src="../groceryimg/LGHH1474.JPG" data-full="../groceryimg/LGHH1474.JPG" class="m-p-g__thumbs-img"/>
+    <img src="../groceryimg/RVCV3950.JPG" data-full="../groceryimg/RVCV3950.JPG" class="m-p-g__thumbs-img"/>
+    <img src="../groceryimg/TQHF7091.JPG" data-full="../groceryimg/TQHF7091.JPG" class="m-p-g__thumbs-img"/>
+    <img src="../groceryimg/UHPQ6472.JPG" data-full="../groceryimg/UHPQ6472.JPG" class="m-p-g__thumbs-img"/>
+    <img src="../groceryimg/WTVB6700.JPG" data-full="../groceryimg/WTVB6700.JPG" class="m-p-g__thumbs-img"/>
+	</div>
+
+	<div class="m-p-g__fullscreen"></div>
+</div>
+<button id="goBackBtn" class="scroll-btn">Go Up ^</button>
+<script>
+	var elem = document.querySelector('.m-p-g');
+
+	document.addEventListener('DOMContentLoaded', function() {
+		var gallery = new MaterialPhotoGallery(elem);
+	});
+
+  var goBackBtn = document.getElementById('goBackBtn');
+  goBackBtn.addEventListener('click', function() {
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+
+</script>
+<!-- partial -->
+  <script src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/45226/material-photo-gallery.min.js'></script>
+</body>
+</html>

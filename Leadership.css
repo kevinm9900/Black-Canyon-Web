@@ -34,6 +34,7 @@ html{
   color: #28282B;
   text-align: center;
   padding: 12px;
+  font-weight:bold;
   text-decoration: none;
   font-size: 18px;
   font-family: "Helvetica"fantasy;
@@ -57,6 +58,11 @@ html{
 .header a.active {
   background-color: #28282B;
   color: #F5F5F5;
+}
+
+.logo {
+  display: inline-block;
+  vertical-align: middle;
 }
 
 /* Float the link section to the right */
@@ -275,10 +281,10 @@ header .container {
     padding: 1rem 0;
     margin-bottom: 20px;
 }
-.inner-we-do a{
+.inner-we-do a {
+    color: white !important;
     padding: 2rem 4rem;
     background: var(--black);
-    color: var(--lightcolor);
     font-size: 1.5rem;
     border-radius: 15px;
 }

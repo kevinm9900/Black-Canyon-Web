@@ -4,33 +4,43 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="about.css">
+    <link rel="stylesheet" href="introduction.css">
     <link rel="stylesheet" href="fontawesome-free-5.15.3-web/css/all.min.css">
 </head>
 <body>
 
   <div class="header">
     <div class="logo appear2">
-    <b href="#default" class="logo"><img src = "images/BCC_Logo_light-wDrop.png" alt=""</b>
-    <div class="header-right">
-      <a href="About.html"><br>About</a>
-      <a href="LeadershipTeam.html"><br>Leadership Team</a>
-      <a href="gallery.html"><br>Gallery</a>
-      <a href="subcontractors.html"><br>Subcontractors</a>
-      <a href="careers.html"><br>Careers</a>
-      <div class="dropdown">
-        <button class="dropbtn">Lets Talk!
+      <a href="index.html"><img src="images/BCC_Logo_light-wDrop.png" alt="Black Canyon Construction Logo"></a>
+    </div>
+    <div class="header-right appear4">      <div class="dropdown">
+        <button class="dropbtn">Contact us
           <i class="fa fa-caret-down"></i>
         </button>
         <div class="dropdown-content">
-          <a href="sales.html">Sales</a>
+          <a href="general.html">General</a>
           <a href="Estimating.html">Estimating</a>
           <a href="ProjectManagement.html">Project Management</a>
+          <a href="sales.html">Sales</a>
         </div>
       </div>
-      <a href="contact.html"><br>Contact</a>
-      <a class = "active" href="Introduction.html"><br>Introduction</a>
-      <a href="index.html"><br>Home</a>
+<!--      <a href="contact.html"><br>Contact</a> -->
+      <a href="LeadershipTeam.html"><br>Leadership Team</a>
+      <div class="dropdown">
+        <button class="dropbtn">Careers
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="generalcareers.html">General</a>
+          <a href="Estimatingcareers.html">Estimating</a>
+          <a href="ProjectManagementcareers.html">Project Management</a>
+          <a href="salescareers.html">Superintendent</a>
+        </div>
+      </div>
+      <a href="subcontractors.html"><br>Subcontractors</a>
+      <a href="portfolio.html"><br>Portfolio</a>
+      <a href="About.html"><br>About</a>
+      <a href="Introduction.html"><br>Introduction</a>
     </div>
   </div>
 </div>
@@ -41,21 +51,21 @@
   <!-- The HTML5 video element that will create the background video on the header -->
   <video width="1280" height=auto controls autoplay muted playsinline>
 
-    <source src="images/test.mp4" type=video/mp4>
+    <source src="images/bcvo.mp4" type=video/mp4>
   </video>
 </div>
 <!-- What we do -->
 <<div class="what-we-do">
     <div class="main-we-do appear">
         <div class="inner-we-do">
-            <h1>Core Values</h1>
-             <p>Established in 1998, Black Canyon Construction is a Texas based Commercial General Contractor firm. With licenses in Texas, New Mexico, Arizona and Colorado, we have been providing General Contracting, Retail Tenant Finish out, Commercial New Construction/Remodeling, and Restoration services for over 15 years.<br>
-            <br> We consistently provide construction services with a customer service attitude like no other! <br>
-               <br> If you are looking for a Construction Company that you can trust to perform, bring in projects on-time, and at or below budget, call our office today.</p>
+            <h1>Missions Statement</h1>
+             <p>At Black Canyon Construction, our mission is to lead with unwavering faith in our values. We are dedicated to delivering unparalleled customer service and maintaining a relentless commitment to doing the right thing in every aspect of our business.<br>
+            <br> Through exceptional leadership, we ensure superior quality in all that we do, creating a legacy of trust and excellence for our clients and communities.<br>
+            </p>
         </div>
 
         <div class="inner-we-do we-do-image">
-                <img src="images/aldi1.jpg" alt="">
+                <img src="convenienceimg/maverik-6-19-2023-aztec-48193_edit.jpg" alt="">
         </div>
     </div>
 </div>
@@ -63,43 +73,63 @@
 <!-- What we do -->
 <!-- our services -->
 <div class="services">
-    <h1>Our <span>Services</span></h1>
+    <h1>Industries <span>We Serve</span></h1>
     <div class="main-services appear3">
         <div class="inner-services">
-            <img src="images/Foundation.jpeg" alt="">
-            <div class="centered">Convenience/Fueling</div>
+            <div class="service-item" onclick="navigateToPortfolio('portfolio.html', 'Convenience Stores')">
+                <img src="images/cstorepic.jpg" alt="">
+                <div class="centered">Convenience Stores</div>
+            </div>
         </div>
 
         <div class="inner-services">
-            <img src="images/Client.jpeg" alt="">
+          <div class="service-item" onclick="navigateToPortfolio('portfolio.html', 'Convenience Stores')">
+            <img src="images/speedystop1.jpg" alt="">
             <div class="centered">Quick Service Restaurants</div>
-        </div>
+          </div>
+      </div>
 
         <div class="inner-services">
+          <div class="service-item" onclick="navigateToPortfolio('portfolio.html', 'Convenience Stores')">
             <img src="images/QOS.jpeg" alt="">
             <div class="centered">Lube Centers</div>
-        </div>
+          </div>
+      </div>
 
         <div class="inner-services">
-            <img src="images/IronHorse1.jpeg" alt="">
-            <p>
+          <div class="service-item" onclick="navigateToPortfolio('portfolio.html', 'Convenience Stores')">
+            <img src="images/carwashpic.jpg" alt="">
               <div class="centered">Car Washes</div>
+            </div>
         </div>
 
         <div class="inner-services">
-            <img src="images/Foundation.jpeg" alt="">
+          <div class="service-item" onclick="navigateToPortfolio('portfolio.html', 'Convenience Stores')">
+            <img src="images/aldipic.jpg" alt="">
             <div class="centered">Grocery Stores</div>
-        </div>
+          </div>
+      </div>
 
         <div class="inner-services">
+          <div class="service-item" onclick="navigateToPortfolio('portfolio.html', 'Convenience Stores')">
             <img src="images/Client.jpeg" alt="">
             <div class="centered">Day Care Centers</div>
-        </div>
+          </div>
+      </div>
 
         <div class="inner-services">
-            <img src="images/QOS.jpeg" alt="">
-            <div class="centered">Urgent Care Centers</div>
-        </div>
+          <div class="service-item" onclick="navigateToPortfolio('portfolio.html', 'Convenience Stores')">
+            <img src="images/dentalpic.jpg" alt="">
+            <div class="centered">Medical/Dental Offices</div>
+          </div>
+      </div>
+
+        <div class="inner-services">
+          <div class="service-item" onclick="navigateToPortfolio('portfolio.html', 'Convenience Stores')">
+            <img src="images/retailstorepic.jpg" alt="">
+            <div class="centered">Retail Stores</div>
+          </div>
+      </div>
 
     </div>
 </div>
@@ -111,11 +141,6 @@
     <div class="main-touch">
         <p>work with us</p>
 
-        <div class="touch-icons">
-            <a href="#"><i class="fab fa-facebook-f"></i></a>
-            <a href="#"><i class="fab fa-youtube"></i></a>
-            <a href="https://www.linkedin.com/company/blackcanyonconstructioncompan/"><i class="fab fa-linkedin-in"></i></a>
-        </div>
         <p><br> Copyright 2022 - Black Canyon Construction | All Rights Reserved | Website Design By: Kevin Moran <p>
     </div>
 </div>

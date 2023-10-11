@@ -122,3 +122,39 @@ const cb8 = function (entries8) {
 };
 const io8 = new IntersectionObserver(cb8);
 io8.observe(appear8);
+
+// JavaScript function to navigate to the portfolio page
+function navigateToPortfolio(url, serviceName) {
+    window.location.href = url;
+}
+
+document.addEventListener("DOMContentLoaded", function () {
+  const form = document.getElementById("survey-form");
+  const submitButton = document.getElementById("submit");
+
+  submitButton.addEventListener("click", function () {
+    const formData = new FormData(form);
+    const jsonData = {};
+
+    formData.forEach((value, key) => {
+      jsonData[key] = value;
+    });
+
+    fetch("https://script.google.com/macros/s/AKfycbzFDEoJN0OoAQ47BBW5cmJLZsa0MC-8RfrqHVXM0Zbs_0t0nm7pDxd8tHkeyxTQ2CYl/exec", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(jsonData),
+    })
+      .then((response) => response.json())
+      .then((data) => {
+        // Handle the response data here
+        console.log(data);
+      })
+      .catch((error) => {
+        // Handle any errors that occur during the fetch
+        console.error(error);
+      });
+  });
+});

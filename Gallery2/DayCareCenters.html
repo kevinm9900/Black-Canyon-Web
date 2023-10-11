@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Day Care Centers</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<link href='https://fonts.googleapis.com/css?family=Roboto+Mono:400,300' rel='stylesheet' type='text/css'><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<link rel="stylesheet" href="./gallerystyle.css">
+
+</head>
+<body>
+  <header>
+    <br> <a href="../portfolio.html"> <button class="btn profile-edit-btn">GO BACK</button> </a>
+      </header>
+      <br>
+      <h1> Day Care Centers <h1>
+<!-- partial:index.partial.html -->
+<div class="m-p-g">
+	<div class="m-p-g__thumbs" data-google-image-layout data-max-height="350">
+    <img src="https://cdn.pixabay.com/photo/2017/08/04/05/37/coming-soon-2579123_640.jpg" data-full="https://cdn.pixabay.com/photo/2017/08/04/05/37/coming-soon-2579123_640.jpg" class="m-p-g__thumbs-img" />
+    <img src="https://cdn.pixabay.com/photo/2017/08/04/05/37/coming-soon-2579123_640.jpg" data-full="https://cdn.pixabay.com/photo/2017/08/04/05/37/coming-soon-2579123_640.jpg" class="m-p-g__thumbs-img" />
+    <img src="https://cdn.pixabay.com/photo/2017/08/04/05/37/coming-soon-2579123_640.jpg" data-full="https://cdn.pixabay.com/photo/2017/08/04/05/37/coming-soon-2579123_640.jpg" class="m-p-g__thumbs-img" />
+    <img src="https://cdn.pixabay.com/photo/2017/08/04/05/37/coming-soon-2579123_640.jpg" data-full="https://cdn.pixabay.com/photo/2017/08/04/05/37/coming-soon-2579123_640.jpg" class="m-p-g__thumbs-img" />
+    <img src="https://cdn.pixabay.com/photo/2017/08/04/05/37/coming-soon-2579123_640.jpg" data-full="https://cdn.pixabay.com/photo/2017/08/04/05/37/coming-soon-2579123_640.jpg" class="m-p-g__thumbs-img" />
+	</div>
+
+	<div class="m-p-g__fullscreen"></div>
+</div>
+<button id="goBackBtn" class="scroll-btn">Go Up ^</button>
+<script>
+	var elem = document.querySelector('.m-p-g');
+
+	document.addEventListener('DOMContentLoaded', function() {
+		var gallery = new MaterialPhotoGallery(elem);
+	});
+
+  var goBackBtn = document.getElementById('goBackBtn');
+  goBackBtn.addEventListener('click', function() {
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+
+</script>
+<!-- partial -->
+  <script src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/45226/material-photo-gallery.min.js'></script>
+</body>
+</html>
