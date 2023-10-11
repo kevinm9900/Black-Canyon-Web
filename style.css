@@ -25,7 +25,7 @@ html{
   background-color:rgba(0, 0, 0, 0);
   opacity: 1;
   padding: 10px 10px;
-  background-image: url("images/indexgif.gif");
+  background: url("images/indexvid.mp4");
   background-size: cover;
   height: 790px;
 }
@@ -166,19 +166,16 @@ header {
   overflow: hidden;
 }
 
-header video {
-  position: relative;
-  filter: brightness(50%);
+.header video {
+  position: absolute;
+  filter: brightness(80%);
   top: 50%;
   left: 50%;
   min-width: 100%;
   min-height: 100%;
   width: auto;
   height: auto;
-  z-index: 0;
-  -ms-transform: translateX(-50%) translateY(-50%);
-  -moz-transform: translateX(-50%) translateY(-50%);
-  -webkit-transform: translateX(-50%) translateY(-50%);
+  z-index: -1; /* Set a negative value to place it behind other content */
   transform: translateX(-50%) translateY(-50%);
 }
 
